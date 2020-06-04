@@ -45,6 +45,8 @@ ghc-options:
 library:
   source-dirs: src
   other-modules: Language.Haskell.To.Elm.DataShape
+  ghc-options:
+    - -Wall
 
 tests:
   haskell-to-elm-test:
@@ -54,8 +56,10 @@ tests:
     - -threaded
     - -rtsopts
     - -with-rtsopts=-N
+    - -Wall
     dependencies:
     - haskell-to-elm
+    - containers
 
 flags:
   examples:

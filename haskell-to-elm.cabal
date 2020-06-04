@@ -1,10 +1,10 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.31.2.
+-- This file has been generated from package.yaml by hpack version 0.33.0.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: ec0451c54bd9e4022ac0332a2a031a869d05f5e460b1156c3a7fc3a2d8b1b715
+-- hash: 469eda45e5c966fa4783087360907b2b54ffb75bb7a64fe9273b3393e090137a
 
 name:           haskell-to-elm
 version:        0.3.0.0
@@ -40,7 +40,7 @@ library
       Language.Haskell.To.Elm.DataShape
   hs-source-dirs:
       src
-  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -Wtabs -funbox-strict-fields
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -Wtabs -funbox-strict-fields -Wall
   build-depends:
       aeson >=1.4.0
     , base >=4.7 && <5
@@ -103,11 +103,12 @@ test-suite haskell-to-elm-test
       Paths_haskell_to_elm
   hs-source-dirs:
       test
-  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -Wtabs -funbox-strict-fields -threaded -rtsopts -with-rtsopts=-N
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -Wtabs -funbox-strict-fields -threaded -rtsopts -with-rtsopts=-N -Wall
   build-depends:
       aeson >=1.4.0
     , base >=4.7 && <5
     , bound >=2.0.0
+    , containers
     , elm-syntax >=0.3.0 && <0.3.1
     , generics-sop >=0.4.0 && <0.6.0
     , haskell-to-elm
